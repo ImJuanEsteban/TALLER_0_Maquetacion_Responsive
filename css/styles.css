@@ -94,7 +94,6 @@ nav a:hover{
     border: none;
     box-sizing: border-box;
     color: var(--blanco);
-    max-width: fit-content;
     min-width: 100%;
     margin-top: auto;
     padding: 10px;
@@ -104,7 +103,9 @@ nav a:hover{
     font-family: 'Roboto';
     margin-bottom: 1rem;
 }
-
+/*----------------------DESCRIPCIÓN----------------------------*/
+.descripcion{padding: 1rem;}
+.imagen_descripcion{display: none;}
 /*----------------------FEATURES----------------------------*/
 #features{
     background: url("../img/index/bg-features.png");
@@ -115,7 +116,7 @@ nav a:hover{
     background-color: rgba(0,0,0,0.35);
     text-align: center;
     padding: 0.5rem;
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 .features-description{
     display: flex;
@@ -166,8 +167,28 @@ nav a:hover{
     }
     .menu-hr{display: none;}
     .navbar-button{background-color:var(--azuloscuro);}
-    .banner{height: 900px;}
+    .banner{height: 1120px;}
     .banner .slide1 h2{
         font-size: 3rem;
+    }
+    .descripcion{
+        display: flex;
+        padding: 2rem 10rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .descripcion .texto_descripcion{
+        width: 50%;
+        padding: 1rem;
+        margin-right: 2rem;
+        font-size: 1.6rem;
+        margin-left: 2rem;
+    }
+    .imagen_descripcion{
+        width: 50%;
+        display: inline;
+        text-align: center;
     }
 }
