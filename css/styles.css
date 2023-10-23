@@ -1,5 +1,5 @@
-@import
-url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100; 0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Poppins:wght@400;500&family=Roboto+Slab:wght@100;300;400;500&family=Roboto:wght@100;400;500;700&display=swap');
+
 :root{
 --azulclaro: #48D6ED;
 --azuloscuro: #337AB7;
@@ -13,9 +13,7 @@ url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@
 --blanco: #fff;
 --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
 }
-*{
-    margin:0;
-}
+*{margin:0;}
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -25,12 +23,14 @@ h1,h2,h3,h4,h5{
 }
 nav{
     display: flex;
+    position: fixed;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--negro);
+    background-color: rgb(0, 0, 0,.8);
     font-family: 'Marcellus', serif;
     font-size: 1.3em;
+    width: 100%;
 }
 .logo{
     background-color: var(--negro2);
@@ -42,13 +42,15 @@ nav{
 .logo img{
     width: 40%;
     max-width: 200px;
+    padding: 1rem;
 }
 .logo i{
     color: var(--blanco);
     font-size: 2rem;
+    padding: 1rem;
 }
 .menu{
-    background-color: rgba(1, 10, 52, 0.838);
+    background-color: rgba(1, 10, 52, 0.8);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -67,7 +69,6 @@ nav a{
 }
 nav a:hover{
     background-color: #0B3860;
-    width: 100%;
 }
 .navbar-button{
     background-color:transparent;
@@ -78,7 +79,33 @@ nav a:hover{
     font-family: 'Marcellus', serif;
     color: var(--blanco);
 }
-/*--------------------------------------------------*/
+/*----------------------BANNER------------------------------*/
+.banner{
+    width: 100%;
+    min-height: 310px;
+    height: 320px;
+    background-image: url(../img/index/slide1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.banner .slide1{
+    background: linear-gradient(180deg, rgba(54, 54, 54, 0.4) 0%, rgba(54,54,54,0.4) 17%, rgba(94, 94, 94, 0.2) 68%);
+    border: none;
+    box-sizing: border-box;
+    color: var(--blanco);
+    max-width: fit-content;
+    min-width: 100%;
+    margin-top: auto;
+    padding: 10px;
+}
+.banner .slide1 h2{
+    font-size: 1.5rem;
+    font-family: 'Roboto';
+    margin-bottom: 1rem;
+}
+
+/*----------------------FEATURES----------------------------*/
 #features{
     background: url("../img/index/bg-features.png");
     color: white;
@@ -139,4 +166,8 @@ nav a:hover{
     }
     .menu-hr{display: none;}
     .navbar-button{background-color:var(--azuloscuro);}
+    .banner{height: 900px;}
+    .banner .slide1 h2{
+        font-size: 3rem;
+    }
 }
