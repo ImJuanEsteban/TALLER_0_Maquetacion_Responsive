@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Poppins:wght@400;500&family=Roboto+Slab:wght@100;300;400;500&family=Roboto:wght@100;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;400;500;700&display=swap');
+
 
 :root{
 --azulclaro: #48D6ED;
@@ -16,11 +17,13 @@
 *{margin:0;}
 body{
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1.4rem;
 }
-h1,h2,h3,h4,h5{
-    font-family: 'Roboto', serif;
-}
+h1,h2,h3,h4,h5{font-family: 'Marcellus', serif;}
+h1{font-size: 3.6rem;}
+h2{font-size: 3.4rem;}
+h3{font-size: 3.2rem;}
+
 nav{
     display: flex;
     position: fixed;
@@ -100,9 +103,8 @@ nav a:hover{
     margin-top: auto;
     padding: 10px;
 }
-.banner .slide1 h2{
-    font-size: 1.5rem;
-    font-family: 'Roboto';
+.banner .slide1 p{
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 /*----------------------DESCRIPCIÓN----------------------------*/
@@ -117,13 +119,14 @@ nav a:hover{
 .features-title{
     background-color: rgba(0,0,0,0.35);
     text-align: center;
-    padding: 0.5rem;
-    font-size: 1.6em;
+    padding: 1rem;
+    font-size: 3.4rem;
 }
 .features-description{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 1rem;
 }
 .feature{
     width: 25%;
@@ -141,15 +144,41 @@ nav a:hover{
     font-size: 2.2em;
     margin-bottom: 1.5rem;
 }
-.feature-blue{background-color: #00325eae;}
-.feature-black{background-color: rgba(0,0,0,0.59);}
+.feature-blue{background-color: #00325eae; font-size: 1.4rem;}
+.feature-black{background-color: rgba(0,0,0,0.59); font-size: 1.4rem;}
 
 
+/*-----------------------UBICACION------------------------*/
+
+.ubicacion{
+    text-align: center;
+    margin: 50px 0 50px 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
+}
+.ubicacion img{width: 100%;}
+.ubicacion .direccion{
+    font-size: 1.6rem;
+    border-bottom: 1px solid var(--azulnegro);
+    width: 50%;
+    margin: 20px auto 20px auto;
+}
+
+
+
+
+
+
+
+
+/*-----------------------COMENTARIOS------------------------*/
 .comentarios{
     display: flex;
     flex-direction: column;
     text-align: center;
     background-color: var(--negro);
+    height: 200px;
     padding: 1rem;
 }
 .comentarios h2{
@@ -245,7 +274,7 @@ nav a:hover{
     .menu-hr{display: none;}
     .navbar-button{background-color:var(--azuloscuro);}
     .banner{height: 1120px;}
-    .banner .slide1 h2{font-size: 3rem;}
+    .banner .slide1 p{font-size: 3rem;}
     .descripcion{
         display: flex;
         padding: 2rem 10rem;
@@ -266,7 +295,7 @@ nav a:hover{
         display: inline;
         text-align: center;
     }
-
+    .ubicacion img{width: 80%;}
     .comentarios_cards{
         display: flex;
         justify-content: space-between;
