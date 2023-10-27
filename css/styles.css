@@ -165,13 +165,6 @@ nav a:hover{
     margin: 20px auto 20px auto;
 }
 
-
-
-
-
-
-
-
 /*-----------------------COMENTARIOS------------------------*/
 .comentarios{
     display: flex;
@@ -250,6 +243,68 @@ nav a:hover{
 .card2,.card3{display: none;}
 
 
+
+
+
+/*------------------------------------ESTILOS FORMULARIO DE REGISTRO---------------------------------*/
+
+.contenedor_principal{
+    background-image: url("../img/fondo_registro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.col1{
+    background-color: var(--azuloscuro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1.2rem;
+}
+.col1 img{width: 50%;}
+.col1 h3{font-size: 1.5rem;}
+
+.col2{
+    background-color: rgb(255, 255, 255,.6);
+    width: 80%;
+    margin: 20px auto 0 auto;
+    padding: 1rem;
+}
+.col2 h2{
+    text-align: center;
+}
+
+label, input ,select{width: 100%;}
+
+.formulario_registro label{
+    font-size: 1rem;
+}
+.formulario_registro input, .formulario_registro select{
+    box-shadow: 10px 10px 44px -9px rgba(0,0,0,0.3);
+    border: none;
+    padding: 4px;
+}
+
+.generos{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+.opcion1, .opcion2, .opcion3{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Resolución notebooks*/
 @media screen and (min-width: 1024px){
     nav{
@@ -309,4 +364,5 @@ nav a:hover{
     .card1{left: 0%;}
     .card2{left: 35%}
     .card3{left: 70%;}
+    /*------------------------------------ESTILOS FORMULARIO DE REGISTRO---------------------------------*/
 }
