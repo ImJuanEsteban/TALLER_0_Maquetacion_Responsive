@@ -19,7 +19,7 @@ body{
     font-size: 16px;
 }
 h1,h2,h3,h4,h5{
-    font-family: 'Marcellus', serif;
+    font-family: 'Roboto', serif;
 }
 nav{
     display: flex;
@@ -146,18 +146,31 @@ nav a:hover{
 
 
 .comentarios{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--negro);
+    padding: 1rem;
+}
+.comentarios h2{
+    font-size: 3.5rem;
+    color: var(--blanco);
+}
+.comentarios_cards{
     padding: 1rem;
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
+    position: relative;
+    /*overflow: hidden;*/
 }
 .card{
     background: var(--degradado);
     box-sizing: border-box;
-    flex: 0 0 33.3%;
+    width: 90%;
     min-width: 300px;
     margin-right: 10px;
     margin-bottom: 10px;
+    transition: transform 0.5s ease-in-out;
 }
 .card-head{
     display: flex;
@@ -203,6 +216,11 @@ nav a:hover{
     color: var(--blanco);
     font-size: 1rem;
 }
+.card-body p{font-size: 1.4rem;}
+.card1{position: absolute; left: 0;}
+.card2,.card3{display: none;}
+
+
 /*Resolución notebooks*/
 @media screen and (min-width: 1024px){
     nav{
@@ -227,9 +245,7 @@ nav a:hover{
     .menu-hr{display: none;}
     .navbar-button{background-color:var(--azuloscuro);}
     .banner{height: 1120px;}
-    .banner .slide1 h2{
-        font-size: 3rem;
-    }
+    .banner .slide1 h2{font-size: 3rem;}
     .descripcion{
         display: flex;
         padding: 2rem 10rem;
@@ -251,14 +267,17 @@ nav a:hover{
         text-align: center;
     }
 
-    .comentarios{
+    .comentarios_cards{
         display: flex;
         justify-content: space-between;
     }
-    .comentarios:last-child{
-        margin-right: 0;
-    }
+    .comentarios_cards:last-child{margin-right: 0;}
     .card{
         margin-right: 10px;
+        width: 30.3%;
     }
+    .card1,.card2,.card3{position: absolute; display: block;}
+    .card1{left: 0%;}
+    .card2{left: 35%}
+    .card3{left: 70%;}
 }
