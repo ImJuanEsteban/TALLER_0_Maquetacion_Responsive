@@ -249,7 +249,7 @@ nav a:hover{
     font-family: "Marcellus";
     color: var(--blanco);
     position: relative;
-    top: 400px;
+    top: 350px;
 }
 .p_pagina .text_footer{padding:5px; border-bottom:  1px solid var(--blanco);}
 .p_pagina .info_footer{border-bottom: 1px solid var(--blanco);}
@@ -330,4 +330,18 @@ nav a:hover{
     .card2{left: 35%}
     .card3{left: 70%;}
     /*------------------------------------ESTILOS FORMULARIO DE REGISTRO---------------------------------*/
+    .p_pagina{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.4rem;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        top: 300px;
+    }
+    .p_pagina .text_footer{width: 40%; border:none;}
+    .p_pagina .info_footer{width: 20%; border: none;}
+    .p_pagina .politicas_footer{width: 30%; border: none;}
+    .social_footer{width: 100%;}
+    .social_footer i{font-size: 2rem;}
 }
