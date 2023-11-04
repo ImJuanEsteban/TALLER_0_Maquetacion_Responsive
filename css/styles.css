@@ -242,82 +242,34 @@ nav a:hover{
 .card1{position: absolute; left: 0;}
 .card2,.card3{display: none;}
 
-
-
-
-
-/*------------------------------------ESTILOS FORMULARIO DE REGISTRO---------------------------------*/
-
-.contenedor_principal{
-    background-image: url("../img/fondo_registro.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.col1{
-    background-color: var(--azuloscuro);
-    color: var(--blanco);
-    text-align: center;
-    padding: 1.2rem;
-}
-.col1 img{width: 50%;}
-.col1 h3{font-size: 1.5rem;}
-
-.col2{
-    background-color: rgb(255, 255, 255,.6);
-    width: 80%;
-    margin: 20px auto 0 auto;
+.p_pagina{
+    background-color: var(--negro);
+    font-size: 1rem;
     padding: 1rem;
-}
-.col2 h2{
-    text-align: center;
-}
-
-label, input ,select{width: 100%;}
-
-.formulario_registro label{
-    font-size: 1rem;
-}
-.formulario_registro input, .formulario_registro select{
-    box-shadow: 10px 10px 44px -9px rgba(0,0,0,0.3);
-    border: none;
-    padding: 4px;
-}
-
-.generos{
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-}
-.opcion1, .opcion2, .opcion3{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-.terminos{
-    display: grid;
-    grid-template-columns: 90% 10%;
-    margin: 10px 0 10px 0;
-}
-button{
-    font-size: 1rem;
     font-family: "Marcellus";
-    background-color: #333333;
-    padding: .5rem 1rem;
     color: var(--blanco);
-    border: none;
-    margin: auto;
+    position: relative;
+    top: 400px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.p_pagina .text_footer{padding:5px; border-bottom:  1px solid var(--blanco);}
+.p_pagina .info_footer{border-bottom: 1px solid var(--blanco);}
+.p_pagina .info_footer_element{display: flex;}
+.p_pagina .info_footer_element i, .p_pagina .info_footer_element p{padding: 5px;}
+.p_pagina a{
+    color: var(--blanco);
+    text-decoration: none;
+}
+.p_pagina .politicas_footer{
+    border-bottom: 1px solid var(--blanco);
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.p_pagina .social_footer{padding: 10px;}
+.p_pagina .social_footer i{
+    font-size: 1.4rem;
+    margin-right: 5px;
+}
 /*Resolución notebooks*/
 @media screen and (min-width: 1024px){
     nav{
